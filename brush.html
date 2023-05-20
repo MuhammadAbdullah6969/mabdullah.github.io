@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brush</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="phone.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="shortcut icon" href="logo/logo1.png" type="image/x-icon">  
+  <link rel="stylesheet" href="click.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-6 col-6">
+          <img src="logo/logo1.png" alt="" class="img-fluid mt-0" id="logo">
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-6 col-6">
+          <label for="exampleDataList" class="form-label"></label>
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <datalist id="datalistOptions">
+            <option value="Hair Straightener brush">
+            <option value="Baby swing for kids">
+            <option value="Hair dryer">
+            <option value="Hanging swing for kids">
+            <option value="LCD WRITING TABLET FOR KIDS">
+            <option value="ELECTRIC EMS BODY MASSAGE">
+          </datalist>
+
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-6">
+          <button class="btn btn-outline-info mt-5 p-1 mb-5 form-control" id="acc" data-bs-toggle="modal"
+            data-bs-target="#exampleModa21">Create an Account</button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModa21" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 " id="exampleModalLabe2l">Log In</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail21" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail21" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword21" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword21">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck21">
+                      <label class="form-check-label" for="exampleCheck21">Check me out</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-6">
+          <button class="btn btn-outline-info mt-5 mb-5 form-control" id="log" data-bs-toggle="modal"
+            data-bs-target="#exampleModa22">Log In </button>
+          <div class="modal fade" id="exampleModa22" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 " id="exampleModalLabe22">Log In</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail22" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail22" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword22" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword22">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck22">
+                      <label class="form-check-label" for="exampleCheck22">Check me out</label>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg mb-5" id="na">
+      <div class="container-fluid">
+        <a class="navbar-brand ps-5 pe-5" href="website.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ps-5 pe-5">
+              <a class="nav-link" href="website.html">Products</a>
+            </li>
+            <li class="nav-item ps-5 pe-5">
+              <a class="nav-link active " aria-current="page" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item ps-5 pe-5">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item ps-5 pe-5">
+              <a class="nav-link" href="faqs.html">Faqs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content and image -->
+  <div class="container-fluid d-flex">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-lg-6 col-md-6 d-flex justify-content-center ">
+        <!-- Container for the image gallery -->
+        <div class="container1">
+
+          <!-- Full-width images with number text -->
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="Products/brush1.webp" style="width:100%" class="enlargeable-image">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="Products/brush2.webp" style="width:100%" class="enlargeable-image">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="Products/brush3.webp" style="width:100%" class="enlargeable-image">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="Products/brush4.webp" style="width:100%" class="enlargeable-image">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="Products/brush5.webp" style="width:100%" class="enlargeable-image">
+          </div>
+
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="row d-flex justify-content-center my-3">
+            <div class="column">
+              <img class="demo cursor" src="Products/brush1.webp" style="width:100%" onclick="currentSlide(1)"
+                alt="The Woods" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="Products/brush2.webp" style="width:100%" onclick="currentSlide(2)"
+                alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="Products/brush3.webp" style="width:100%" onclick="currentSlide(3)"
+                alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="Products/brush4.webp" style="width:100%" onclick="currentSlide(4)"
+                alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="Products/brush5.webp" style="width:100%" onclick="currentSlide(5)"
+                alt="Nature and sunrise">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-6 col-md-6 text-center ">
+        <h2 class="text-center">Lorem ipsum dolor sit amet.</h2>
+        <p class="card-text"> Price:<del>Rs.1500</del><br>
+        <h3>Rs.800</h3>
+        </p>
+        <p class="p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, omnis unde? Tempora iusto
+          nesciunt quas provident quam cupiditate modi sit in consequatur esse fuga aspernatur illo quaerat culpa
+          tenetur, minima labore possimus. Exercitationem fugiat aliquid quia, rerum non, magni natus error quam
+          perspiciatis incidunt vitae sapiente! Officia nemo error cumque amet veritatis sapiente voluptates magnam
+          maiores dolores possimus ipsum omnis odit accusantium suscipit fugit nihil commodi, veniam a corrupti
+          perferendis totam sunt. Quaerat iusto sed fugit amet laboriosam recusandae natus, iure maxime adipisci alias
+          explicabo voluptates aut numquam velit vero reiciendis cum! Cupiditate et voluptate asperiores facere odio!
+          Alias, vitae.</p>
+        <a href="#" class="btn btn-primary">Buy Now </a>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- Footer -->
+   <footer class="footer mt-5 container-fluid">
+    <div class="row">
+      <div class="col">
+        <h2>Empowering Women and Children
+        </h2>
+        <p>"Join us in our mission to provide safe and innovative products that support the growth and development of
+          women and children around the world."
+        </p>
+      </div>
+      <div class="col">
+        <ul class="footerheading">
+          
+            <h2>
+              Information
+            </h2>
+      
+          <li><a href="#">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="#fep">Products</a></li>
+          <li><a href="faqs.html">Faqs</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul class="footerheading">
+          
+            <h2>
+              Products
+            </h2>
+
+          <li><a href="brush.html">Hair Straightener brush</a></li>
+          <li><a href="babyswing.html">Baby swing for kids</a></li>
+          <li><a href="hairdryer.html">Hair dryer</a></li>
+          <li><a href="hangingswing.html">Hanging swing for kids</a></li>
+          <li><a href="lcd.html">LCD WRITING TABLET FOR KIDS</a></li>
+          <li><a href="massage.html">ELECTRIC EMS BODY MASSAGE</a></li>
+        </ul>
+      </div>
+    </div>
+    © Copyright 2023 @abdullahjani100. All Rights Reserved.
+  </footer>
+    
+
+  <script src="click.js"></script>
+  <script src="style.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

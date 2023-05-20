@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 203, 212);
+}
+#logo{
+    height: 35vh;
+}
+#exampleDataList{
+width: 22vw;
+}
+#acc{
+   max-width: auto;
+   box-sizing: border-box;
+   max-width: 100%;
+   margin: auto;
+   position: relative;
+   top: 12%;
+ }
+#log{
+    width: 10vw;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100px;
+    margin: auto;
+    position: relative;
+    top: 12%;
+} 
+#na{
+    background-color: rgb(255, 165, 0) !important;
+    border-radius: 8px;
+}
+.navbar li a:hover{
+    color: red;
+}
+#product1{
+    height:100px;
+}
+.footerheading{
+ list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footer{
+    background-color: rgb(169, 194, 171) ;
+}
+
+

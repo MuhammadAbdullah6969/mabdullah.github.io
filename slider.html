@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+.slide-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 calc(20% - 20px);
+  margin-right: 20px;
+}
+
+.slide:last-of-type {
+  margin-right: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.navigation-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.navigation-arrows .prev-arrow,
+.navigation-arrows .next-arrow {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.navigation-arrows .prev-arrow:hover,
+.navigation-arrows .next-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation-arrows .prev-arrow i,
+.navigation-arrows .next-arrow i {
+  color: #fff;
+  font-size: 20px;
+}
+.slide{
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slides">
+          <div class="slide">
+            <img src="img/luffy.png" alt="">
+            <h3>Heading 1</h3>
+            <p>Some description about slide 1.</p>
+            <button>View details</button>
+          </div>
+          <div class="slide">
+            <img src="img/luffy.png" alt="">
+             <h3>Heading 1</h3>
+            <p>Some description about slide 1.</p>
+            <button>View details</button>           
+          </div>
+          <div class="slide">
+            <img src="img/luffy.png" alt="">
+             <h3>Heading 1</h3>
+            <p>Some description about slide 1.</p>
+            <button>View details</button>
+          </div>
+          <div class="slide">
+            <img src="img/luffy.png" alt="">
+             <h3>Heading 1</h3>
+            <p>Some description about slide 1.</p>
+            <button>View details</button>
+          </div>
+          <div class="slide">
+            <img src="img/luffy.png" alt="">
+             <h3>Heading 1</h3>
+            <p>Some description about slide 1.</p>
+            <button>View details</button>
+          </div>
+          <div class="slide">
+            <img src="img/luffy.png" alt="">
+             <h3>Heading 1</h3>
+            <p>Some description about slide 1.</p>
+            <button>View details</button>
+          </div>
+        
+        </div>
+        <div class="navigation-arrows">
+          <div class="prev-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="next-arrow">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+  
+         
+    <script>
+const slider = document.querySelector('.slides');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev-arrow');
+const nextBtn = document.querySelector('.next-arrow');
+let direction = 'next';
+
+function slide() {
+  const slideWidth = slides[0].offsetWidth;
+  if (direction === 'next') {
+    slider.style.transform = `translateX(-${slideWidth + 10}px)`;
+    slider.appendChild(slides[0]);
+  } else {
+    slider.insertBefore(slides[slides.length - 1], slides[0]);
+    slider.style.transform = `translateX(-${slideWidth + 10}px)`;
+    setTimeout(() => {
+      slider.style.transition = 'none';
+      slider.style.transform = 'translateX(0)';
+      setTimeout(() => {
+        slider.style.transition = 'transform 0.5s ease-in-out';
+      });
+    }, 500);
+  }
+}
+
+nextBtn.addEventListener('click', () => {
+  direction = 'next';
+  slide();
+});
+
+prevBtn.addEventListener('click', () => {
+  direction = 'prev';
+  slide();
+});
+
+
+
+
+    </script>
+</body>
+</html>
