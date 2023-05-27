@@ -14,6 +14,8 @@
   <link rel="shortcut icon" href="logo/logo2.png" type="image/x-icon">
   <link rel="stylesheet" href="click.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body id="body">
@@ -23,16 +25,18 @@
         <div class="col-lg-5 col-md-5 col-sm-6 col-6">
           <img src="logo/logo1.png" alt="" class="img-fluid mt-0" id="logo">
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-6 col-6">
+         <!-- Search -->
+         <div class="col-lg-5 col-md-5 col-sm-6 col-6">
           <label for="exampleDataList" class="form-label"></label>
           <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <i class="fa-solid fa-magnifying-glass" id="ico"></i>
           <datalist id="datalistOptions">
-            <option value="Hair Straightener brush">
-            <option value="Baby swing for kids">
-            <option value="Hair dryer">
-            <option value="Hanging swing for kids">
-            <option value="LCD WRITING TABLET FOR KIDS">
-            <option value="ELECTRIC EMS BODY MASSAGE">
+            <option class="datalist-option" value="Hair Straightener brush">
+            <option class="datalist-option" value="Baby swing for kids">
+            <option class="datalist-option" value="Hair dryer">
+            <option class="datalist-option" value="Hanging swing for kids">
+            <option class="datalist-option" value="LCD WRITING TABLET FOR KIDS">
+            <option class="datalist-option" value="ELECTRIC EMS BODY MASSAGE">
           </datalist>
 
         </div>
@@ -187,8 +191,9 @@
           <img src="Products/brush1.webp" class="card-img-top img-fluid enlargeable-image" alt="..." style="height: 190px;">
           <div class="card-body">
             <h5 class="card-title"> Hair Straightener brush</h5>
-            <p class="card-text"> Price:<del>Rs.1500</del><br>
-            <h3>Rs.800</h3>
+            <p class="card-text"> Price:<del>Rs.1,500</del>
+              <b style="color: red;">13.4% OFF</b><br>
+            <h3>Rs.1,299</h3>
             </p>
             <a href="brush.html" class="btn btn-primary">View Details </a>
           </div>
@@ -199,8 +204,9 @@
           <img src="Products/babyswing1.webp" class="card-img-top img-fluid enlargeable-image" alt="..." style="height: 190px;">
           <div class="card-body">
             <h5 class="card-title">Baby swing for kids</h5>
-            <p class="card-text">Price:<del>Rs.1500</del><br>
-            <h3>Rs.800</h3>
+            <p class="card-text">Price:<del>Rs.749</del>
+              <b style="color: red;">13.33% OFF</b><br>
+            <h3>Rs.649</h3>
             </p>
             <a href="babyswing.html" class="btn btn-primary">View Details</a>
           </div>
@@ -213,8 +219,9 @@
           <img src="Products/dryer1.webp" class="card-img-top img-fluid enlargeable-image" alt="..." style="height: 190px;">
           <div class="card-body">
             <h5 class="card-title">Hair dryer</h5>
-            <p class="card-text"> Price:<del>Rs.1500</del><br>
-            <h3>Rs.800</h3>
+            <p class="card-text"> Price:<del>Rs.999</del>
+              <b style="color: red;">20% OFF</b> <br>
+            <h3>Rs.799</h3>
             </p>
             <a href="hairdryer.html" class="btn btn-primary">View Details </a>
           </div>
@@ -225,8 +232,9 @@
           <img src="Products/hangingswing1.webp" class="card-img-top img-fluid enlargeable-image" alt="..." style="height: 190px;">
           <div class="card-body">
             <h5 class="card-title">Hanging swing for kids</h5>
-            <p class="card-text">Price:<del>Rs.1500</del><br>
-            <h3>Rs.800</h3>
+            <p class="card-text">Price:<del>Rs.1,250</del>
+              <b style="color: red;">16% OFF</b><br>
+            <h3>Rs.1,050</h3>
             </p>
             <a href="hangingswing.html" class="btn btn-primary">View Details</a>
           </div>
@@ -239,8 +247,9 @@
           <img src="Products/massage1.webp" class="card-img-top img-fluid enlargeable-image" alt="..." style="height: 170px;">
           <div class="card-body">
             <h5 class="card-title">LCD WRITING TABLET FOR KIDS</h5>
-            <p class="card-text"> Price:<del>Rs.1500</del><br>
-            <h3>Rs.800</h3>
+            <p class="card-text"> Price:<del>Rs.899</del>
+              <b style="color: red;">22.22% OFF</b><br>
+            <h3>Rs.699</h3>
             </p>
             <a href="lcd.html" class="btn btn-primary">View Details </a>
           </div>
@@ -251,8 +260,9 @@
           <img src="Products/lcd1.webp" class="card-img-top img-fluid enlargeable-image" alt="..." style="height: 170px;">
           <div class="card-body">
             <h5 class="card-title">ELECTRIC EMS BODY MASSAGE</h5>
-            <p class="card-text">Price:<del>Rs.1500</del><br>
-            <h3>Rs.800</h3>
+            <p class="card-text">Price:<del>Rs.2,199</del>
+              <b style="color: red;">13.64% OFF</b><br>
+            <h3>Rs.1,899</h3>
             </p>
             <a href="massage.html" class="btn btn-primary">View Details</a>
           </div>
@@ -305,6 +315,8 @@
   </footer>
 
 
+
+  <script src="datalist.js"></script>
 <script src="click.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"

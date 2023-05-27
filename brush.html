@@ -12,8 +12,15 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="phone.css">
   <link rel="stylesheet" href="style1.css">
-  <link rel="shortcut icon" href="logo/logo1.png" type="image/x-icon">  
+  <link rel="shortcut icon" href="logo/logo1.png" type="image/x-icon">
   <link rel="stylesheet" href="click.css">
+  <link rel="stylesheet" href="slider.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -23,17 +30,20 @@
         <div class="col-lg-5 col-md-5 col-sm-6 col-6">
           <img src="logo/logo1.png" alt="" class="img-fluid mt-0" id="logo">
         </div>
+        <!-- Search -->
         <div class="col-lg-5 col-md-5 col-sm-6 col-6">
           <label for="exampleDataList" class="form-label"></label>
           <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+          <i class="fa-solid fa-magnifying-glass" id="ico"></i>
           <datalist id="datalistOptions">
-            <option value="Hair Straightener brush">
-            <option value="Baby swing for kids">
-            <option value="Hair dryer">
-            <option value="Hanging swing for kids">
-            <option value="LCD WRITING TABLET FOR KIDS">
-            <option value="ELECTRIC EMS BODY MASSAGE">
+            <option class="datalist-option" value="Hair Straightener brush">
+            <option class="datalist-option" value="Baby swing for kids">
+            <option class="datalist-option" value="Hair dryer">
+            <option class="datalist-option" value="Hanging swing for kids">
+            <option class="datalist-option" value="LCD WRITING TABLET FOR KIDS">
+            <option class="datalist-option" value="ELECTRIC EMS BODY MASSAGE">
           </datalist>
+
 
         </div>
         <div class="col-lg-1 col-md-1 col-sm-6 col-6">
@@ -115,7 +125,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg mb-5" id="na">
       <div class="container-fluid">
-        <a class="navbar-brand ps-5 pe-5" href="website.html">Home</a>
+        <a class="navbar-brand ps-5 pe-5" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -123,7 +133,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item ps-5 pe-5">
-              <a class="nav-link" href="website.html">Products</a>
+              <a class="nav-link" href="index.html">Products</a>
             </li>
             <li class="nav-item ps-5 pe-5">
               <a class="nav-link active " aria-current="page" href="contactus.html">Contact Us</a>
@@ -187,7 +197,7 @@
           <div class="row d-flex justify-content-center my-3">
             <div class="column">
               <img class="demo cursor" src="Products/brush1.webp" style="width:100%" onclick="currentSlide(1)"
-                alt="The Woods" >
+                alt="The Woods">
             </div>
             <div class="column">
               <img class="demo cursor" src="Products/brush2.webp" style="width:100%" onclick="currentSlide(2)"
@@ -209,28 +219,153 @@
 
         </div>
       </div>
-      <div class="col-12 col-sm-12 col-lg-6 col-md-6 text-center ">
-        <h2 class="text-center">Lorem ipsum dolor sit amet.</h2>
-        <p class="card-text"> Price:<del>Rs.1500</del><br>
-        <h3>Rs.800</h3>
+      <div class="col-12 col-sm-12 col-lg-6 col-md-6  ">
+        <h2 class="text-center">Hair Straightener brush.</h2>
+        <ul class="p-5">
+          <li>Random color hair straightener brush designed for girls</li>
+          <li>Efficient and time-saving: Triangular teeth design cuts straightening time in half or less, allowing you
+            to straighten more hair at once with fewer strokes</li>
+          <li>Quick heat-up: The brush is ready to use in just 60 seconds</li>
+          <li>Enhanced safety features: Patented flame retardant V-shaped plastic frame protects against burns and
+            injuries from every angle</li>
+          <li>Auto shut-off: The hair straightener brush automatically turns off after 30 minutes for added safety</li>
+          <li>Adjustable settings: Choose from 5 heat settings to suit your hair type and styling preferences</li>
+          <li>Convenient and easy to use: The 360° rotating power cord allows for easy maneuverability while styling
+          </li>
+          <li>Suitable for the whole family: Can be used by adults and children, including men for beard styling</li>
+        </ul>
+        <p class="card-text text-center"> Price:<del>Rs.1,500</del>
+          <b style="color: red;">13.4% OFF</b><br>
+        <h3 class="text-center ">Rs.1,299</h3>
         </p>
-        <p class="p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, omnis unde? Tempora iusto
-          nesciunt quas provident quam cupiditate modi sit in consequatur esse fuga aspernatur illo quaerat culpa
-          tenetur, minima labore possimus. Exercitationem fugiat aliquid quia, rerum non, magni natus error quam
-          perspiciatis incidunt vitae sapiente! Officia nemo error cumque amet veritatis sapiente voluptates magnam
-          maiores dolores possimus ipsum omnis odit accusantium suscipit fugit nihil commodi, veniam a corrupti
-          perferendis totam sunt. Quaerat iusto sed fugit amet laboriosam recusandae natus, iure maxime adipisci alias
-          explicabo voluptates aut numquam velit vero reiciendis cum! Cupiditate et voluptate asperiores facere odio!
-          Alias, vitae.</p>
-        <a href="#" class="btn btn-primary">Buy Now </a>
+
+        <a href="#" class="btn btn-primary d-flex justify-content-center " style="width: 400px;  margin-left: 20%;">Buy Now </a>
       </div>
     </div>
   </div>
 
+  <!--  You may also like -->
+  <section class="Youmayalsolike ">
+    <div class="">
+      <h2 class="text-center m-4">You may also like!</h2>
+    </div>
+    <div class="container-fluid text-center my-3">
+      <div class="row mx-auto my-auto justify-content-center">
+        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="col-md-3">
+                <div class="card p-4" style="height: 480px;">
+                  <div class="card-img">
+                    <img src="Products/babyswing1.webp" class="img-fluid enlargeable-image" style="height: 260px;">
+                    <h3>Baby swing for kids</h3>
+                    <p>Price:<del>Rs.749</del>
+                      <b style="color: red;">13.34% OFF</b><br>
+                    <h3>Rs.649</h3>
+                    </p>
+                    <a href="brush.html" class="btn btn-primary">View Details </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card " style="height: 480px;">
+                  <div class="card-img">
+                    <img src="Products/dryer2.webp" class="img-fluid enlargeable-image" style="height: 260px;">
+                    <h3>Hair Dryer</h3>
+                    <p>Price:<del>Rs.999</del>
+                      <b style="color: red;">20% OFF</b><br>
+                    <h3>Rs.799</h3>
+                    </p>
+                    <a href="hairdryer.html" class="btn btn-primary mt-3">View Details </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card" style="height: 480px;">
+                  <div class="card-img">
+                    <img src="Products/hangingswing1.webp" class="img-fluid enlargeable-image" style="height: 260px;">
+                    <h3>Hanging Swing For Kids</h3>
+                    <p>Price:<del>Rs.1,250</del><b style="color: red;">16% OFF</b>
+                    <h3>Rs.1,050</h3>
+                    </p>
+                    <a href="hangingswing.html" class="btn btn-primary">View Details </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card" style="height: 480px;">
+                  <div class="card-img">
+                    <img src="Products/brush3.webp" class="img-fluid enlargeable-image" style="height: 260px;">
+                    <h3>Hair Straightener brush</h3>
+                    <p>Price:<del>Rs.1,500</del>
+                      <b style="color: red;">13.4% OFF</b><br>
+                    <h3>Rs.1,299</h3>
+                    </p>
+                    <a href="brush.html" class="btn btn-primary mt-3">View Details </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card" style="height: 480px;">
+                  <div class="card-img enlargeable-image">
+                    <img src="Products/lcd1.webp" class="img-fluid " style="height: 260px;">
+                    <h3>LCD WRITING TABLET FOR KIDS</h3>
+                    <p>Price:<del>Rs.899</del>
+                      <b style="color: red;">22.22% OFF</b><br>
+                    <h3>Rs.699</h3>
+                    </p>
+                    <a href="lcd.html" class="btn btn-primary">View Details </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-3">
+                <div class="card" style="height: 480px;">
+                  <div class="card-img enlargeable-image">
+                    <img src="Products/massage1.webp" class="img-fluid" style="height: 260px;">
+                    <h3>ELECTRIC EMS BODY MASSAGE</h3>
+                    <p>Price:<del>Rs.2,199</del>
+                      <b style="color: red;">13.64% OFF</b><br>
+                    <h3>Rs.1,899</h3>
+                    </p>
+                    <a href="massage.html" class="btn btn-primary">View Details </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-danger me-5 " aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-danger ms-5" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-   <!-- Footer -->
-   <footer class="footer mt-5 container-fluid">
+
+  <!-- Footer -->
+  <footer class="footer mt-5 container-fluid">
     <div class="row">
       <div class="col">
         <h2>Empowering Women and Children
@@ -241,24 +376,24 @@
       </div>
       <div class="col">
         <ul class="footerheading">
-          
-            <h2>
-              Information
-            </h2>
-      
-          <li><a href="#">Home</a></li>
+
+          <h2>
+            Information
+          </h2>
+
+          <li><a href="index.html">Home</a></li>
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="contactus.html">Contact Us</a></li>
-          <li><a href="#fep">Products</a></li>
+          <li><a href="index.html">Products</a></li>
           <li><a href="faqs.html">Faqs</a></li>
         </ul>
       </div>
       <div class="col">
         <ul class="footerheading">
-          
-            <h2>
-              Products
-            </h2>
+
+          <h2>
+            Products
+          </h2>
 
           <li><a href="brush.html">Hair Straightener brush</a></li>
           <li><a href="babyswing.html">Baby swing for kids</a></li>
@@ -271,8 +406,12 @@
     </div>
     © Copyright 2023 @abdullahjani100. All Rights Reserved.
   </footer>
-    
 
+
+
+  <script src="slider.js"></script>
+  <script src="datalist.js"></script>
+  <script src="slider.js"></script>
   <script src="click.js"></script>
   <script src="style.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"

@@ -16,7 +16,7 @@ function handleClick(event) {
   var closeButton = document.createElement('div');
   closeButton.classList.add('close-button');
   closeButton.innerHTML = '&times;'; // add a close symbol to the button
-  enlarged.appendChild(closeButton); // add the close button to the enlarged element
+  enlarged.appendChild(closeButton); // add the close button to the enlarged element 
   
   // Create a new element for the image and set its source
   var img = document.createElement('img');
