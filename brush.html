@@ -16,6 +16,14 @@
   <link rel="stylesheet" href="click.css">
   <link rel="stylesheet" href="slider.css">
 
+<style>
+  html{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+</style>
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -23,15 +31,15 @@
 
 </head>
 
-<body>
+<body class="brushbody ">
   <header id="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-6 col-6">
+        <div class="col-lg-5 col-md-5 col-sm-6 col-6 d-flex justify-content-center">
           <img src="logo/logo1.png" alt="" class="img-fluid mt-0" id="logo">
         </div>
         <!-- Search -->
-        <div class="col-lg-5 col-md-5 col-sm-6 col-6">
+        <div class="col-lg-5 col-md-5 col-sm-6 col-6 searchdiv">
           <label for="exampleDataList" class="form-label"></label>
           <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
           <i class="fa-solid fa-magnifying-glass" id="ico"></i>
@@ -46,7 +54,7 @@
 
 
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-6 col-6">
+        <div class="col-lg-1 col-md-1 col-sm-6 col-6 ">
           <button class="btn btn-outline-info mt-5 p-1 mb-5 form-control" id="acc" data-bs-toggle="modal"
             data-bs-target="#exampleModa21">Create an Account</button>
           <!-- Modal -->
@@ -83,7 +91,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-6 col-6">
+        <div class="col-lg-1 col-md-1 col-sm-6 col-6 ">
           <button class="btn btn-outline-info mt-5 mb-5 form-control" id="log" data-bs-toggle="modal"
             data-bs-target="#exampleModa22">Log In </button>
           <div class="modal fade" id="exampleModa22" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -239,7 +247,7 @@
         <h3 class="text-center ">Rs.1,299</h3>
         </p>
 
-        <a href="#" class="btn btn-primary d-flex justify-content-center " style="width: 400px;  margin-left: 20%;">Buy Now </a>
+        <a href="#" class="btn btn-primary d-flex justify-content-center " style="width: 400px;  margin: auto;">Buy Now </a>
       </div>
     </div>
   </div>
@@ -409,7 +417,7 @@
 
 
 
-  <script src="slider.js"></script>
+ 
   <script src="datalist.js"></script>
   <script src="slider.js"></script>
   <script src="click.js"></script>
